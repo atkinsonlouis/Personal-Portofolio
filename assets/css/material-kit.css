@@ -11864,9 +11864,12 @@ label {
   margin-bottom: 0px;
   min-height: 32px;
   text-align: center;
+  font-size: 32px;
 }
 #card-title {
   text-align: center;
+  margin-bottom: 50px;
+
   
 }
 
