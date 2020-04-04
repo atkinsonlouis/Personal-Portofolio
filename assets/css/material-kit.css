@@ -67,7 +67,9 @@ nav,
 section {
   display: block;
 }
-
+* {
+  font-family: "Roboto";
+}
 body {
   margin: 0;
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
@@ -11864,15 +11866,19 @@ label {
   margin-bottom: 0px;
   min-height: 32px;
   text-align: center;
-  font-size: 32px;
+  font-size: 35px;
 }
-#card-title {
+#card-title1 {
   text-align: center;
   margin-bottom: 50px;
 
   
 }
 
+#card-title {
+  text-align: center;
+  margin-bottom: 10px;
+}
 .row {
   margin-top: 50px;
 }
@@ -15483,7 +15489,7 @@ small,
 .footer-big h4,
 .media .media-heading {
   font-weight: 700;
-  font-family: "Roboto Slab", "Times New Roman", serif;
+  font-family: "Roboto", "Times New Roman", serif;
 }
 
 .title,
