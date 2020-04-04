@@ -72,7 +72,7 @@ The above copyright notice and this permission notice shall be included in all c
               </a>
             </li>
             <li class="nav-item">
-              <a href="#contact" class="nav-link">
+              <a href="#mita" class="nav-link">
                 <i class="material-icons">mail</i> Contact Me
               </a>
             </li>
@@ -100,7 +100,8 @@ The above copyright notice and this permission notice shall be included in all c
   <div class="main main-raised">
     <div class="container">
       <!-- Section One : About Me -->
-      <div class="row">
+
+      <div class="row" id="aboutme">
         <div class="col-md-12">
           <div class="section text-center">
             <div class="row">
@@ -109,16 +110,18 @@ The above copyright notice and this permission notice shall be included in all c
             </div>
             <!-- About Me Content-->
             <div class="row">
-              <span class="col-md-1"></span>
+              <div class="col-md-12">
+                <h3 class="title"> About Me </h3>
 
-              <div class="col-md-10">
-                <h3 class="title">
-                  About Me </h3> </span>
+                <span class="col-md-1"></span>
+
+
+
                 <div class="row">
-                  <div class="col-md-4">
+                  <div class="col-md-3">
                     <img id="aboutMeAvatar" src="./assets/img/me.jpg" class="img-raised rounded-circle img-fluid" />
                   </div>
-                  <div class="col-md-8 text-left">
+                  <div class="col-md-9 text-left float-right">
                     <blockquote class="blockquote">
 
                       Hello, My name is Louis. I am an aspiring Front End Developer with experience in HTML, CSS,
@@ -131,7 +134,10 @@ The above copyright notice and this permission notice shall be included in all c
                       increased in difficulty and scale as I become more familiar with the tools I am using, I have
                       included my most accomplished work in my Projects section however if you would like to
                       see more of my work and the progression I have made please visit my <a
-                        href="https://github.com/atkinsonlouis">Github</a>
+                        href="https://github.com/atkinsonlouis">Github</a> Lorem, ipsum dolor sit amet consectetur
+                      adipisicing elit. Soluta iste laborum debitis, nulla distinctio excepturi sequi eius dicta error
+                      exercitationem velit aliquid veritatis labore, nam libero quae et illum deleniti!
+
 
 
 
@@ -152,7 +158,7 @@ The above copyright notice and this permission notice shall be included in all c
         </div>
       </div>
       <!-- Section Two : Projects -->
-      <div class="row">
+      <div class="row" id="projects">
         <div class="col-md-12">
           <div class="section text-left">
             <div class="row">
@@ -227,194 +233,120 @@ The above copyright notice and this permission notice shall be included in all c
           </div>
         </div>
       </div>
+      <div id="challenges"></div>
       <!-- Section Three : Coding Challenges -->
-      <div class="row">
-        <div class="col-md-12">
-          <div class="section text-left">
-            <div class="row">
-              <div class="col-md-12">
-                <h3 id="challenges" class="title">Coding Challenges</h3>
-              </div>
+      <div class="row"></div>
+      <div class="col-md-12">
+        <div class="section text-left">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="title">Coding Challenges</h3>
             </div>
-            <div class="row">
-              <div class="col-md-12">
-                <p class="text-muted">
-                  <em>Clicking on a card will show a modal associated with the challenge.</em>
-                </p>
-              </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <p class="text-muted">
+                <em>Clicking on a card will show a modal associated with the challenge.</em>
+              </p>
             </div>
-            <!-- Challenge Cards-->
-            <div class="row">
-              <!-- Math-->
-              <div class="col-md-4">
-                <div class="card" data-toggle="modal" data-target="#mathModal">
-                  <div class="card-header">
-                    <h4>Basic Math</h4>
-                  </div>
-                  <div class="card-body">
-                    <p>
-                      Enter some numbers. The script finds the highest value, lowest value, sum of all
-                      values,
-                      product
-                      of all values, and mean of all values.
-                    </p>
-                  </div>
+          </div>
+          <!-- Challenge Cards-->
+          <div class="row">
+            <!-- Math-->
+            <div class="col-md-4">
+              <div class="card" data-toggle="modal" data-target="#mathModal">
+                <div class="card-header">
+                  <h4>Basic Math</h4>
                 </div>
-              </div>
-              <!-- Factorial-->
-              <div class="col-md-4">
-                <div class="card" data-toggle="modal" data-target="#factModal">
-                  <div class="card-header">
-                    <h4>Factorial</h4>
-                  </div>
-                  <div class="card-body">
-                    <p>
-                      Enter some numbers. The script finds the highest value, lowest value, sum of all
-                      values,
-                      product
-                      of all values, and mean of the values.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <!-- Palindrome-->
-              <div class="col-md-4">
-                <div class="card" data-toggle="modal" data-target="#palModal">
-                  <div class="card-header">
-                    <h4>Palindrome</h4>
-                  </div>
-                  <div class="card-body">
-                    <p>
-                      Enter a word. If the word is a palindrome (meaning it reads the same backwards),
-                      the
-                      script will
-                      check and let you know.
-                    </p>
-                  </div>
+                <div class="card-body">
+                  <p>
+                    Enter some numbers. The script finds the highest value, lowest value, sum of all
+                    values,
+                    product
+                    of all values, and mean of all values.
+                  </p>
                 </div>
               </div>
             </div>
-            <div class="row">
-              <!-- Fizz Buzz-->
-              <div class="col-md-4">
-                <div class="card" data-toggle="modal" data-target="#fbModal">
-                  <div class="card-header">
-                    <h4>Fizz Buzz</h4>
-                  </div>
-                  <div class="card-body">
-                    <p>
-                      Enter two numbers. Any number 1-100 that is divisble by your numbers will be
-                      replaced with
-                      an
-                      appropriate string.
-                    </p>
-                  </div>
+            <!-- Factorial-->
+            <div class="col-md-4">
+              <div class="card" data-toggle="modal" data-target="#factModal">
+                <div class="card-header">
+                  <h4>Factorial</h4>
+                </div>
+                <div class="card-body">
+                  <p>
+                    Enter some numbers. The script finds the highest value, lowest value, sum of all
+                    values,
+                    product
+                    of all values, and mean of the values.
+                  </p>
                 </div>
               </div>
-              <!-- Sum of all Fears-->
-              <div class="col-md-4">
-                <div class="card" data-toggle="modal" data-target="#fearsModal">
-                  <div class="card-header">
-                    <h4>Sum of All Fears</h4>
-                  </div>
-                  <div class="card-body">
-                    <p>
-                      A google coding interview question. Find if your K value exists. K is equal to the
-                      sum of
-                      two
-                      indexes on the array, which you provide.
-                    </p>
-                  </div>
+            </div>
+            <!-- Palindrome-->
+            <div class="col-md-4">
+              <div class="card" data-toggle="modal" data-target="#palModal">
+                <div class="card-header">
+                  <h4>Palindrome</h4>
                 </div>
-              </div>
-              <!-- Blackjack -->
-              <div class="col-md-4">
-                <div class="card" data-toggle="modal" data-target="#blackjackModal">
-                  <div class="card-header">
-                    <h4>Blackjack</h4>
-                  </div>
-                  <div class="card-body">
-                    <p>
-                      Play blackjack against my script. Normal blackjack rules. The deck will shuffle
-                      every
-                      game, so
-                      good luck counting cards.
-                    </p>
-                  </div>
+                <div class="card-body">
+                  <p>
+                    Enter a word. If the word is a palindrome (meaning it reads the same backwards),
+                    the
+                    script will
+                    check and let you know.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      <!-- Section Four : Contact -->
-      <div id="contact">
-        <div class="col-md-12">
-          <div class="section text-left">
-            <div class="row">
-              <div class="col-md-12">
-                <h3 id="projects" class="title">Contact Me</h3>
+          <div class="row">
+            <!-- Fizz Buzz-->
+            <div class="col-md-4">
+              <div class="card" data-toggle="modal" data-target="#fbModal">
+                <div class="card-header">
+                  <h4>Fizz Buzz</h4>
+                </div>
+                <div class="card-body">
+                  <p>
+                    Enter two numbers. Any number 1-100 that is divisble by your numbers will be
+                    replaced with
+                    an
+                    appropriate string.
+                  </p>
+                </div>
               </div>
             </div>
-            <!-- Project Content -->
-            <div class="row">
-              <div class="col-md-12">
-                <!-- Project One -->
-                <div class="form-group">
-                  <div class="col-md-12">
-                    <label for="exampleInputName">Name</label>
-                    <input type="text" class="form-control">
-                  </div>
+            <!-- Sum of all Fears-->
+            <div class="col-md-4">
+              <div class="card" data-toggle="modal" data-target="#fearsModal">
+                <div class="card-header">
+                  <h4>Sum of All Fears</h4>
                 </div>
-                <!-- Email address input-->
-                <div class="form-group">
-                  <div class="col-md-12">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                      else.</small>
-                  </div>
+                <div class="card-body">
+                  <p>
+                    A google coding interview question. Find if your K value exists. K is equal to the
+                    sum of
+                    two
+                    indexes on the array, which you provide.
+                  </p>
                 </div>
-                <!-- subject input -->
-                <div class="form-group">
-                  <div class="form-group">
-                    <div class="col-md-12">
-                      <label for="exampleInputSubject"> Subject </label>
-                      <input type="text" class="form-control" id="exampleInputSubject1">
-                    </div>
-                  </div>
-                  <!--  body input-->
-                  <div class="form-group">
-                    <div class="form-group">
-                      <div class="col-md-12">
-                        <label for="exampleInputSubject"> Body </label>
-                        <input type="text" class="form-control" id="exampleInputSubject1">
-                      </div>
-                    </div>
-
-                    <div class="form-group">
-                      <div class="form-group">
-                        <div class="col-md-12">
-                          <label for="exampleInputSubject"> Subject </label>
-                          <input type="text" class="form-control" id="exampleInputSubject1">
-                        </div>
-                      </div>
-
-
-                    </div>
-                    <!-- submit button-->
-                    <div class="form-group">
-                      <div class="col-md-offset-2 col-md-12 text-left">
-                        <input type="submit" class="btn btn-default" value="Send" />
-                      </div>
-                    </div>
-
-
-
-
-
-                  </div>
+              </div>
+            </div>
+            <!-- Blackjack -->
+            <div class="col-md-4">
+              <div class="card" data-toggle="modal" data-target="#blackjackModal">
+                <div class="card-header">
+                  <h4>Blackjack</h4>
+                </div>
+                <div class="card-body">
+                  <p>
+                    Play blackjack against my script. Normal blackjack rules. The deck will shuffle
+                    every
+                    game, so
+                    good luck counting cards.
+                  </p>
                 </div>
               </div>
             </div>
@@ -422,6 +354,76 @@ The above copyright notice and this permission notice shall be included in all c
         </div>
       </div>
     </div>
+    <div id="mita"></div>
+    <!-- Section Four : Contact -->
+    <div class="row">
+      <div class="col-md-12">
+      </div>
+    </div>
+    <!-- Contact Content -->
+    <div class="d-flex flex-row justify-content-center">
+      <div class="col-md-8 card">
+        <h3 class="title">Contact Me</h3>
+        <!-- Project One -->
+        <div class="form-group">
+          <div class="col-md-12">
+            <label for="exampleInputName">Name</label>
+            <input type="text" class="form-control">
+          </div>
+        </div>
+        <!-- Email address input-->
+        <div class="form-group">
+          <div class="col-md-12">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+        </div>
+        <!-- subject input -->
+        <div class="form-group">
+          <div class="form-group">
+            <div class="col-md-12">
+              <label for="exampleInputSubject"> Subject </label>
+              <input type="text" class="form-control" id="exampleInputSubject1">
+            </div>
+          </div>
+          <!--  body input-->
+          <div class="form-group">
+            <div class="form-group">
+              <div class="col-md-12">
+                <label for="exampleInputSubject"> Body </label>
+                <input type="text" class="form-control" id="exampleInputSubject1">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="form-group">
+                <div class="col-md-12">
+                  <label for="exampleInputSubject"> Subject </label>
+                  <input type="text" class="form-control" id="exampleInputSubject1">
+                </div>
+              </div>
+
+
+            </div>
+            <!-- submit button-->
+            <div class="form-group">
+              <div class="col-md-offset-2 col-md-12 text-center">
+                <input type="submit" class="btn btn-default" value="Send" />
+              </div>
+            </div>
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
   </div>
   </div>
 
