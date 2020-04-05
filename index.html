@@ -180,7 +180,7 @@ The above copyright notice and this permission notice shall be included in all c
                         <p> Description of the project and a GIF</p>
                       </div>
                       <div class="col-md-5">
-                        <p class=" proj-desc">
+                        <p class=" proj-desc text-right">
                           This is the first .NET MVC Web Application I built. It's a personal blog where I write
                           about coding stuff.
                           If I log into the site, I can write posts and moderate comments if anyone feels compelled
@@ -206,7 +206,7 @@ The above copyright notice and this permission notice shall be included in all c
                         <p> Description of the project and a GIF</p>
                       </div>
                       <div class="col-md-5">
-                        <p>
+                        <p class="text-right">
                           This is my second MVC Web Application. It's a bit more complex than my blog project. It
                           designed to be an administrative tool
                           that a team can use to track bugs in their software and assign them to members of their
@@ -214,11 +214,11 @@ The above copyright notice and this permission notice shall be included in all c
                           not have any access to the functionality, but the demo users you can choose to sign in as
                           use seeded data to play around with.
                         </p>
+
                         <a href="https://dgbugtracker.azurewebsites.net" target="_blank"
                           class="float-right btn btn-default">Visit the Bug Tracker</a>
                         <a href="https://github.com/drrky-g/DG_BugTracker" target="_blank"
                           class="float-right btn btn-default">View Repo</a>
-
 
 
 
@@ -245,20 +245,20 @@ The above copyright notice and this permission notice shall be included in all c
           </div>
           <div class="row">
             <div class="col-md-12">
-              <p class="text-muted">
+              <p class="text-muted text-center">
                 <em>Clicking on a card will show a modal associated with the challenge.</em>
               </p>
             </div>
           </div>
           <!-- Challenge Cards-->
-          <div class="row">
+          <div class=" row">
             <!-- Math-->
             <div class="col-md-4">
               <div class="card" data-toggle="modal" data-target="#mathModal">
-                <div class="card-header">
+
+                <div class="card-body text-center">
                   <h4>Basic Math</h4>
-                </div>
-                <div class="card-body">
+                  <hr>
                   <p>
                     Enter some numbers. The script finds the highest value, lowest value, sum of all
                     values,
@@ -269,12 +269,11 @@ The above copyright notice and this permission notice shall be included in all c
               </div>
             </div>
             <!-- Factorial-->
-            <div class="col-md-4">
+            <div class=" col-md-4">
               <div class="card" data-toggle="modal" data-target="#factModal">
-                <div class="card-header">
-                  <h4>Factorial</h4>
-                </div>
-                <div class="card-body">
+                <div class="card-body text-center">
+                  <h4> Factorial </h4>
+                  <hr>
                   <p>
                     Enter some numbers. The script finds the highest value, lowest value, sum of all
                     values,
@@ -285,12 +284,11 @@ The above copyright notice and this permission notice shall be included in all c
               </div>
             </div>
             <!-- Palindrome-->
-            <div class="col-md-4">
+            <div class=" col-md-4">
               <div class="card" data-toggle="modal" data-target="#palModal">
-                <div class="card-header">
+                <div class="card-body text-center">
                   <h4>Palindrome</h4>
-                </div>
-                <div class="card-body">
+                  <hr>
                   <p>
                     Enter a word. If the word is a palindrome (meaning it reads the same backwards),
                     the
@@ -305,10 +303,9 @@ The above copyright notice and this permission notice shall be included in all c
             <!-- Fizz Buzz-->
             <div class="col-md-4">
               <div class="card" data-toggle="modal" data-target="#fbModal">
-                <div class="card-header">
+                <div class="card-body text-center">
                   <h4>Fizz Buzz</h4>
-                </div>
-                <div class="card-body">
+                  <hr>
                   <p>
                     Enter two numbers. Any number 1-100 that is divisble by your numbers will be
                     replaced with
@@ -321,10 +318,9 @@ The above copyright notice and this permission notice shall be included in all c
             <!-- Sum of all Fears-->
             <div class="col-md-4">
               <div class="card" data-toggle="modal" data-target="#fearsModal">
-                <div class="card-header">
+                <div class="card-body text-center">
                   <h4>Sum of All Fears</h4>
-                </div>
-                <div class="card-body">
+                  <hr>
                   <p>
                     A google coding interview question. Find if your K value exists. K is equal to the
                     sum of
@@ -337,10 +333,9 @@ The above copyright notice and this permission notice shall be included in all c
             <!-- Blackjack -->
             <div class="col-md-4">
               <div class="card" data-toggle="modal" data-target="#blackjackModal">
-                <div class="card-header">
+                <div class="card-body text-center">
                   <h4>Blackjack</h4>
-                </div>
-                <div class="card-body">
+                  <hr>
                   <p>
                     Play blackjack against my script. Normal blackjack rules. The deck will shuffle
                     every
@@ -362,7 +357,7 @@ The above copyright notice and this permission notice shall be included in all c
     </div>
     <!-- Contact Content -->
     <div class="d-flex flex-row justify-content-center">
-      <div class="col-md-8 card">
+      <div class="col-sm-7 card">
         <h3 class="title">Contact Me</h3>
         <!-- Project One -->
         <div class="form-group">
@@ -391,35 +386,27 @@ The above copyright notice and this permission notice shall be included in all c
             <div class="form-group">
               <div class="col-md-12">
                 <label for="exampleInputSubject"> Body </label>
-                <input type="text" class="form-control" id="exampleInputSubject1">
+                <textarea class="form-control" row="5" cols="50" id="exampleInputSubject1"> </textarea>
               </div>
             </div>
-
-            <div class="form-group">
-              <div class="form-group">
-                <div class="col-md-12">
-                  <label for="exampleInputSubject"> Subject </label>
-                  <input type="text" class="form-control" id="exampleInputSubject1">
-                </div>
-              </div>
-
-
-            </div>
-            <!-- submit button-->
-            <div class="form-group">
-              <div class="col-md-offset-2 col-md-12 text-center">
-                <input type="submit" class="btn btn-default" value="Send" />
-              </div>
-            </div>
-
-
-
 
 
           </div>
+          <!-- submit button-->
+          <div class="form-group">
+            <div class="col-md-offset-2 col-md-12 text-center">
+              <input type="submit" class="btn btn-default" value="Send" />
+            </div>
+          </div>
+
+
+
+
+
         </div>
       </div>
     </div>
+  </div>
   </div>
   </div>
   </div>
